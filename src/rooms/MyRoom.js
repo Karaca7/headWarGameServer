@@ -5,7 +5,7 @@ exports.MyRoom = class extends colyseus.Room {
   maxClients = 4;
 
   onCreate (options) {
-    this.setState(new MyRoomState());
+    // this.setState(new MyRoomState());
 
     this.onMessage("type", (client, message) => {
       //
